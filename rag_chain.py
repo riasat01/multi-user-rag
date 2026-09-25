@@ -44,5 +44,5 @@ def answer_question(question: str, user_id: str, k: int = TOP_K) -> dict:
     return {
         "answer": response.content,
         "sources": sources,
-        "chunksj_used": len(chunks),
+        "chunks_used": len(chunks),
     }

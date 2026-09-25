@@ -5,8 +5,6 @@ from langchain_core.documents import Document
 
 from config import CHUNK_SIZE, CHUNK_OVERLAP
 
-SUPPORTED_EXTENSIONS = {".pdf", ".txt", ".docx"}
-
 def load_document(file_path: Path) -> list[Document]:
     suffix = file_path.suffix.lower()
 
